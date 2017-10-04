@@ -47,10 +47,11 @@ h1 {
 }
 
 h2 {
-  font-family: 'Changa One', sans-serif;
-  font-size: 0.75em;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.80em;
   margin: -5px 0 0;
   font-weight: normal;
+  font-style: italic;
 }
 
 
