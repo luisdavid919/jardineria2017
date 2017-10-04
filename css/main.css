@@ -3,7 +3,7 @@ GENERAL
 ***********************************/
 
 body {
-  font-family: 'Open Sans', sans-serif;
+ font-family: 'Open Sans', sans-serif;
 }
 
 #wrapper {
@@ -61,7 +61,7 @@ NAVIGATION
 ***********************************/
 
 nav {
-  text-align: center;
+  text-align: left;
   padding: 10px 0;
   margin: 20px 0 0;
 }
@@ -77,6 +77,7 @@ nav li {
 }
 
 nav a {
+  font-family: 'Gloria Hallelujah',cursive;
   font-weight: 800;
   padding: 15px 10px;
 }
@@ -135,7 +136,7 @@ COLORS
 
 /* site body */
 body {
-  background-color: #fff;
+  background-color:#1599B3;
   color: #999;
 }
 
@@ -148,6 +149,8 @@ header {
 /* nav background on mobile */
 nav {
   background: #84b631;
+  border-style: solid;
+  border-color: #b4bdc0;
 }
 
 /* logo text */
@@ -171,7 +174,9 @@ nav a.selected, nav a:hover {
 }
 
 
-
+audio {
+  display:none;
+}
 
 
 
