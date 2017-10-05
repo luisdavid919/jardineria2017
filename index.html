@@ -4,29 +4,33 @@
     <meta charset="utf-8">
     <title>Jardineria Acuatica</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Muli|Gloria+Hallelujah|Inconsolata|Lato:900i' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Muli|Gloria+Hallelujah|Inconsolata:700|Lato:900i' rel='stylesheet' type='text/css'>
     <script src="https://use.fontawesome.com/738f393294.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/ripples.js"></script>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
       <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.10";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+        <script>
+          (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_LAsdk.js#xfbml=1&version=v2.10";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
     <header>
       <a href="index.html" id="logo">
         <h1> <i class="fa fa-leaf fa-spin fa-1x fa-fw" aria-hidden="true">&nbsp&nbsp&nbsp</i>Bienvenido a Jardinería Acuática</h1>
-        <h2>Implementación de Jardínes Acuáticos</h2>
+        <h2>Implementación de Jardínes Acuáticos a tu servicio en Cuernavaca, Morelos</h2>
       </a>
       <nav>
         <ul>
-          <li><a href="index.html" class="selected">Inicio</a></li>
-          <li><a href="about.html">Nosotros</a></li>
-          <li><a href="gallery.html">Galería</a></li>
+          <li><a href="index.html" class="selected">Inicio //</a></li>
+          <li><a href="about.html">Nosotros //</a></li>
+          <li><a href="gallery.html">Galería //</a></li>
           <li><a href="contact.html">Contacto</a></li>
         </ul>
       </nav>
@@ -36,7 +40,7 @@
         <ul id="gallery">
           <li>
             <a href="img/14.jpg">
-              <img src="img/14.jpg" alt="">
+              <img src="img/14.jpg" alt="" id="image">
               <p></p>
             </a>
           </li>
@@ -72,6 +76,14 @@
       </footer>
     </div>
    <script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiI1MEUzQzIiLCJjdXN0b21Db2xvciI6ZmFsc2UsImljb24iOiJidWJibGUiLCJwcm9ub3VuIjoidXMiLCJsYW5ndWFnZSI6ImVzIiwiYnJhbmRlZCI6ZmFsc2UsImludHJvVGV4dCI6IkhvbGEsIGFxdcOtIGVuY29udHJhcsOhcyBpbmZvcm1hY2nDs24gcGFyYSBjb250YWN0YXJub3MuXG5cbkdyYWNpYXMgcG9yIHR1IHZpc2l0YSwgbm8gb2x2aWRlcyByZWNvbWVuZGFybm9zIGRhbmRvIGxpa2UgZW4gZWwgYm90w7NuIGRlIGFiYWpvLiAiLCJjaGFubmVscyI6W1siZmFjZWJvb2siLCJqYXJkaW5lcmlhY3VhdGljYSIsInNvY2lhbCJdLFsicGhvbmUiLCIwMS0oNzc3KTI0MjY5NjgiLCJjbGFzc2ljIl0sWyJlbWFpbCIsImphcmRpbmVyaWFjdWF0aWNhQGdtYWlsLmNvbSIsImNsYXNzaWMiXV19'></script>
-   <audio autoplay="true" src="assets/nature.mp3">
+   <script>
+    $('body').ripples({
+  resolution: 256,
+  dropRadius: 20,
+  perturbance: 0.04,
+  interactive:true,
+    });
+  </script>
+   <audio autoplay="true" src="assets/nature.mp3" loop></audio>
   </body>
 </html>
