@@ -10,17 +10,7 @@
     <script src="js/ripples.js"></script>
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
-      <div id="fb-root"></div>
-        <script>
-          (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/es_LAsdk.js#xfbml=1&version=v2.10";
-          fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));
-        </script>
+  <body>    
     <header>
       <a href="index.html" id="logo">
         <h1> <i class="fa fa-leaf fa-spin fa-1x fa-fw" aria-hidden="true">&nbsp&nbsp&nbsp</i>Bienvenido a Jardinería Acuática</h1>
@@ -35,9 +25,36 @@
         </ul>
       </nav>
     </header>
-    <div id="wrapper">
-      <section>
-        <ul id="gallery">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+            <img src="img/14.jpg" style="width:100%">
+            <div class="text">Caption One</div>
+            </div>
+
+        <div class="mySlides fade">
+            <img src="img/15.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/16.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/17.jpg" style="width:100%">
+            <div class="text">Caption Four</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="img/18.JPG" style="width:100%">
+            <div class="text">Caption Five</div>
+        </div>
+        </div>
+
+         <div id="wrapper">
+
+       <!-- <ul id="gallery">
           <li>
             <a href="img/14.jpg">
               <img src="img/14.jpg" alt="" id="image">
@@ -68,7 +85,8 @@
               <p></p>
             </a>
           </li>
-        </ul>
+        </ul>-->
+      <section>
       </section>
       <footer>
         <a href="https://www.facebook.com/jardineriacuatica"><img src="img/iconos/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
@@ -83,6 +101,23 @@
   perturbance: 0.04,
   interactive:true,
     });
+  </script>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+                                            }
+      slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 10000); // Change image every 2 seconds
+                          } 
   </script>
    <audio autoplay="true" src="assets/nature.mp3" loop></audio>
   </body>
